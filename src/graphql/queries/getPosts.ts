@@ -5,6 +5,7 @@ const query = gql`
     posts {
       title
       content
+      created_at: createdAt
     }
   }
 `
