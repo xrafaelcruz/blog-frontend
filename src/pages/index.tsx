@@ -1,16 +1,13 @@
 import { GetStaticProps } from 'next'
 import Head from 'next/head'
-import styled from 'styled-components'
 
 import client from 'graphql/client'
 import GET_POSTS from 'graphql/queries/getPosts'
 import { HomeProps } from 'types/api'
 
-const createMarkup = (html: string) => ({ __html: html })
+import Post from 'components/Post'
 
-const Title = styled.h3`
-  color: ${(props) => props.theme.fg};
-`
+// const createMarkup = (html: string) => ({ __html: html })
 
 const Home = ({ posts }: HomeProps) => {
   return (
@@ -22,8 +19,8 @@ const Home = ({ posts }: HomeProps) => {
       <ul>
         {posts?.map((post, i) => (
           <li key={i}>
-            <Title>{post.title}</Title>
-            <div dangerouslySetInnerHTML={createMarkup(post.content)} />
+            <Post {...post} />
+            {/* <div dangerouslySetInnerHTML={createMarkup(post.content)} /> */}
           </li>
         ))}
       </ul>
