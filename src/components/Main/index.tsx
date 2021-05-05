@@ -1,7 +1,13 @@
+import * as S from './style'
+
 export type MainProps = {
-  title: string
+  children: React.ReactNode
 }
 
-const Main = ({ title }: MainProps) => <h1>{title}</h1>
+const Main = ({ children }: MainProps) => (
+  <S.Main>
+    <S.Content>{children} </S.Content>
+  </S.Main>
+)
 
 export default Main

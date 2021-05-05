@@ -1,16 +1,13 @@
-import Main, { MainProps } from '.'
-
 import React from 'react'
 import { Story, Meta } from '@storybook/react'
+import Main, { MainProps } from '.'
 
 export default {
   title: 'Main',
-  component: Main
+  component: Main,
+  args: {
+    children: <h1>Teste</h1>
+  }
 } as Meta
 
-const Template: Story<MainProps> = (args) => <Main {...args} />
-
-export const Primary = Template.bind({})
-Primary.args = {
-  title: 'Rafael Cruz'
-}
+export const Default: Story<MainProps> = (args) => <Main {...args} />
