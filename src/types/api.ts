@@ -3,7 +3,3 @@ export type PostProps = {
   content: string
   createdAt: string
 }
-
-export type HomeProps = {
-  posts: PostProps[]
-}

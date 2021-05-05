@@ -1,32 +1,20 @@
 import { GetStaticProps } from 'next'
-import Head from 'next/head'
 
 import client from 'graphql/client'
 import GET_POSTS from 'graphql/queries/getPosts'
-import { HomeProps } from 'types/api'
+import { PostProps } from 'types/api'
 
-import Post from 'components/Post'
+import Posts from 'components/Posts'
 
-// const createMarkup = (html: string) => ({ __html: html })
-
-const Home = ({ posts }: HomeProps) => {
-  return (
-    <div>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <ul>
-        {posts?.map((post, i) => (
-          <li key={i}>
-            <Post {...post} />
-            {/* <div dangerouslySetInnerHTML={createMarkup(post.content)} /> */}
-          </li>
-        ))}
-      </ul>
-    </div>
-  )
+export type PropTypes = {
+  posts: PostProps[]
 }
+
+const Home = ({ posts }: PropTypes) => (
+  <>
+    <Posts posts={posts} />
+  </>
+)
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const { posts } = await client.request(GET_POSTS)
