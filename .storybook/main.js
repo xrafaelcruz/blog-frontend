@@ -18,6 +18,8 @@ module.exports = {
       "src": path.resolve(__dirname, "../src"),
       "components": path.resolve(__dirname, "../src/components"),
       "utils": path.resolve(__dirname, "../src/utils"),
+      "graphql/client": path.resolve(__dirname, "../src/graphql/client"),
+      "graphql/queries/getPosts": path.resolve(__dirname, "../src/graphql/queries/getPosts"),
     };
 
     return config;
