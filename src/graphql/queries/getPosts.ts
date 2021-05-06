@@ -1,8 +1,9 @@
 import { gql } from 'graphql-request'
 
 const query = gql`
-  {
-    posts {
+  query getPosts($start: Int, $limit: Int) {
+    posts(start: $start, limit: $limit) {
+      id
       title
       content
       createdAt: created_at

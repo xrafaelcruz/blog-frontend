@@ -16,8 +16,8 @@ const Home = ({ posts }: PropTypes) => (
   </>
 )
 
-export const getStaticProps: GetStaticProps = async (context) => {
-  const { posts } = await client.request(GET_POSTS)
+export const getStaticProps: GetStaticProps = async () => {
+  const { posts } = await client.request(GET_POSTS, { limit: 20 })
 
   return {
     props: {
