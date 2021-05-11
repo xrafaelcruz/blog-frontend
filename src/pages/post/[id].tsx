@@ -5,7 +5,7 @@ import GET_POST from 'graphql/queries/getPost'
 import GET_POSTS from 'graphql/queries/getPosts'
 import { PostProps } from 'types/api'
 
-import Post from 'components/Post'
+import PostDetail from 'components/PostDetail'
 
 export type PropTypes = {
   post: PostProps
@@ -16,9 +16,7 @@ type PathProps = {
 }
 
 const PostPage = ({ post }: PropTypes) => (
-  <>
-    <Post {...post} />
-  </>
+  <>{post && <PostDetail {...post} />}</>
 )
 
 export async function getStaticPaths() {
@@ -36,9 +34,10 @@ export async function getStaticPaths() {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const { post } = await client.request(GET_POST, { id: params?.id })
+  const { post } = await client.request(GET_POST, { id: params?.id || 1 })
 
   return {
+    revalidate: 60,
     props: {
       post
     }
