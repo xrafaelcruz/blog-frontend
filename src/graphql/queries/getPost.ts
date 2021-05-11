@@ -1,8 +1,8 @@
 import { gql } from 'graphql-request'
 
 const query = gql`
-  query getPosts($start: Int, $limit: Int) {
-    posts(start: $start, limit: $limit) {
+  query getPost($id: ID!) {
+    post(id: $id) {
       id
       title
       content

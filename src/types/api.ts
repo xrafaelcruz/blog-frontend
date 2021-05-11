@@ -1,8 +1,6 @@
 export type PostProps = {
+  id: string
   title: string
   content: string
-}
-
-export type HomeProps = {
-  posts: PostProps[]
+  createdAt: string
 }
