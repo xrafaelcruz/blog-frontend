@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const Article = styled.article`
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  cursor: pointer;
   display: flex;
   flex-direction: column;
   height: 100%;
