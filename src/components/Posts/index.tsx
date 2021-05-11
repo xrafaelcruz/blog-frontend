@@ -18,7 +18,6 @@ const Posts = ({ posts }: PropTypes) => {
       next={() => handleScroll(handleScrollParams)}
       hasMore={handleScrollParams.hasMore}
       loader={<S.Message>Loading...</S.Message>}
-      endMessage={<S.Message>Fim</S.Message>}
     >
       {allPosts?.map((post) => (
         <S.Item key={post.id}>
