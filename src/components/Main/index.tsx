@@ -1,12 +1,12 @@
 import * as S from './style'
 
-export type MainProps = {
+export type PropTypes = {
   children: React.ReactNode
 }
 
-const Main = ({ children }: MainProps) => (
+const Main = ({ children }: PropTypes) => (
   <S.Main>
-    <S.Content>{children} </S.Content>
+    <S.PageContent>{children} </S.PageContent>
   </S.Main>
 )
 
