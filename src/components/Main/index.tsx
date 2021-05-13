@@ -6,7 +6,7 @@ export type PropTypes = {
 
 const Main = ({ children }: PropTypes) => (
   <S.Main>
-    <S.PageContent>{children} </S.PageContent>
+    <S.PageContent>{children}</S.PageContent>
   </S.Main>
 )
 

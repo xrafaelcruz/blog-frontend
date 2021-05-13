@@ -1,7 +1,7 @@
 import React from 'react'
 import { Story, Meta } from '@storybook/react'
-import Author from '.'
 import { AuthorProps } from 'types/api'
+import Author from '.'
 
 export default {
   title: 'Author',
@@ -19,8 +19,4 @@ export default {
   }
 } as Meta
 
-export const Default: Story<AuthorProps> = (args) => (
-  <div style={{ background: '#000', padding: '50px' }}>
-    <Author {...args} />
-  </div>
-)
+export const Default: Story<AuthorProps> = (args) => <Author {...args} />

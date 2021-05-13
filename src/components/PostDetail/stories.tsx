@@ -20,8 +20,4 @@ export default {
   }
 } as Meta
 
-export const Default: Story<PostProps> = (args) => (
-  <div style={{ background: '#000', padding: '50px' }}>
-    <PostDetail {...args} />
-  </div>
-)
+export const Default: Story<PostProps> = (args) => <PostDetail {...args} />
