@@ -20,6 +20,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const { posts } = await client.request(GET_POSTS, { limit: 20 })
 
   return {
+    revalidate: 10,
     props: {
       posts
     }
