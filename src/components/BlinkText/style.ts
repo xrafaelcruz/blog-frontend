@@ -4,8 +4,12 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 0 5vw;
+  padding: 0 0 40px;
   width: 100%;
+
+  @media (max-width: 640px) {
+    display: none;
+  }
 `
 
 const blinkCursor = keyframes`
@@ -39,4 +43,8 @@ export const Text = styled.h1`
   overflow: hidden;
   white-space: nowrap;
   text-align: center;
+
+  @media (max-width: 640px) {
+    animation: none;
+  }
 `

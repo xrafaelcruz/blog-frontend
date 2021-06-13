@@ -2,7 +2,11 @@ import styled from 'styled-components'
 import HTML from 'components/HTML'
 
 export const Title = styled.h1`
-  margin-bottom: 1rem;
+  margin: 40px 0 1rem;
+
+  @media (max-width: 640px) {
+    margin-top: 80px;
+  }
 `
 
 export const Time = styled.time`

@@ -8,9 +8,10 @@ export const Layout = styled.div`
   background-size: cover;
   display: flex;
   flex-direction: column;
+  gap: 5px;
   justify-content: flex-start;
   min-height: 100vh;
-  padding: 5vw;
+  padding: 40px;
   overflow-x: hidden;
   position: relative;
   width: 100%;
@@ -37,7 +38,7 @@ export const Header = styled.header`
     background: ${(props) => props.theme.color.dark};
     box-shadow: ${(props) => `1px 1px 5px ${props.theme.color.secondary}`};
     left: 0;
-    padding: 5px 5vw;
+    padding: 5px 15px;
     position: fixed;
     top: 0;
   }
@@ -46,11 +47,13 @@ export const Header = styled.header`
 export const Left = styled.aside``
 
 export const Main = styled.main`
-  max-width: 75vw;
+  max-width: calc(100% - 96px);
+  padding: 0 40px;
   width: 100%;
 
   @media (max-width: 640px) {
     max-width: 100%;
+    padding: 0;
   }
 `
 

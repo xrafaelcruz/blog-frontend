@@ -15,7 +15,6 @@ export const Title = styled.h2`
   && {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    color: ${(props) => props.theme.color.white};
     display: -webkit-box;
     font-size: 2rem;
     overflow: hidden;
@@ -27,7 +26,7 @@ export const Title = styled.h2`
     transition: all 0.3 ease;
 
     @media (max-width: 720px) {
-      font-size: 2.8rem;
+      font-size: 2.6rem;
     }
   }
 `

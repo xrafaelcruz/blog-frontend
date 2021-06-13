@@ -11,6 +11,7 @@ export const List = styled(InfiniteScroll as any)`
 
   @media (max-width: 640px) {
     grid-template-columns: 1fr;
+    padding-top: 80px;
   }
 `
 
