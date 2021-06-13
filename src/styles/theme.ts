@@ -7,7 +7,8 @@ const theme = {
     gray: '#e7e7e7'
   },
   font: {
-    primary: 'Open Sans'
+    primary: 'Open Sans',
+    blink: 'Special Elite'
   }
 }
 
