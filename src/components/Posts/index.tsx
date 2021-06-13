@@ -1,6 +1,6 @@
 import { PostProps } from 'types/api'
 
-import Post from 'components/Post'
+import PostCard from 'components/PostCard'
 
 import * as S from './style'
 import { useHandleScroll } from './hooks'
@@ -21,7 +21,7 @@ const Posts = ({ posts }: PropTypes) => {
     >
       {allPosts?.map((post) => (
         <S.Item key={post.id}>
-          <Post {...post} />
+          <PostCard {...post} />
         </S.Item>
       ))}
     </S.List>
