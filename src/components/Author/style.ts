@@ -21,3 +21,9 @@ export const Content = styled(HTML)`
   margin-top: 8rem;
   max-width: 100%;
 `
+
+export const Wrapper = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+`
