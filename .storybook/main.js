@@ -21,6 +21,7 @@ module.exports = {
       "graphql/client": path.resolve(__dirname, "../src/graphql/client"),
       "graphql/queries/getPosts": path.resolve(__dirname, "../src/graphql/queries/getPosts"),
       "styles/global": path.resolve(__dirname, "../src/styles/global"),
+      "styles/storybook": path.resolve(__dirname, "../src/styles/storybook"),
     };
 
     return config;
