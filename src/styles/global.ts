@@ -17,7 +17,6 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: #000;
   }
 
   a {
@@ -48,15 +47,19 @@ export const defaultStyles = css`
     }
   }
 
+  h1 {
+    line-height: 4rem;
+
+    @media (max-width: 720px) {
+      line-height: 3.8rem;
+    }
+  }
+
   h1,
   h2 {
-    color: ${(props) => props.theme.color.primary};
+    color: ${(props) => props.theme.color.white};
     font-family: ${(props) => props.theme.font.primary};
     font-size: 3.2rem;
-    text-transform: uppercase;
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
 
     @media (max-width: 720px) {
       font-size: 3rem;
@@ -64,10 +67,9 @@ export const defaultStyles = css`
   }
 
   time {
-    color: ${(props) => props.theme.color.gray};
     font-family: ${(props) => props.theme.font.primary};
     font-size: 1.6rem;
-    font-weight: 300;
+    font-weight: 400;
   }
 `
 
