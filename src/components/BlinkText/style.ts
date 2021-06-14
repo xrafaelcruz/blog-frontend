@@ -35,7 +35,7 @@ const typing = keyframes`
 export const Text = styled.h1`
   && {
     align-self: center;
-    animation: ${blinkCursor} 500ms steps(40) infinite normal,
+    animation: ${blinkCursor} 1500ms steps(40) infinite normal,
       ${typing} 2s steps(40) 1s normal both;
     border-right: 2px solid rgba(255, 255, 255, 0.75);
     display: inline-block;
