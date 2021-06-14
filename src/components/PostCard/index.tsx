@@ -8,6 +8,10 @@ import { formatDate } from 'utils/date'
 import * as S from './style'
 
 const mouseMove = (e: any, ref: any) => {
+  if (window.innerWidth <= 920) {
+    return null
+  }
+
   const box = ref.current
   const boxRect = box.getBoundingClientRect()
 
@@ -22,6 +26,10 @@ const mouseMove = (e: any, ref: any) => {
 }
 
 const mouseLeave = (ref: any) => {
+  if (window.innerWidth <= 920) {
+    return null
+  }
+
   const box = ref.current
 
   box.style.transform = 'none'
