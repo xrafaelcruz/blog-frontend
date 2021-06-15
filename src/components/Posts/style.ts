@@ -9,15 +9,19 @@ export const List = styled(InfiniteScroll as any)`
   padding-bottom: 80px;
   position: relative;
 
-  @media (max-width: 640px) {
+  @media (max-width: 920px) {
     grid-template-columns: 1fr;
-    padding-top: 80px;
+    padding-top: 20px;
   }
 `
 
 export const Item = styled.div`
   height: 25rem;
-  padding: 2rem;
+  padding: 20px;
+
+  @media (max-width: 920px) {
+    height: 20rem;
+  }
 `
 
 export const Message = styled.p`

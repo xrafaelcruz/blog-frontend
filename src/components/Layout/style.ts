@@ -21,9 +21,10 @@ export const Layout = styled.div`
     z-index: 2;
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 920px) {
     display: flex;
     flex-direction: column;
+    padding: 58px 0 40px;
   }
 
   ${defaultStyles}
@@ -34,7 +35,7 @@ export const Header = styled.header`
   width: 100%;
   z-index: 20;
 
-  @media (max-width: 640px) {
+  @media (max-width: 920px) {
     background: ${(props) => props.theme.color.dark};
     box-shadow: ${(props) => `1px 1px 5px ${props.theme.color.secondary}`};
     left: 0;
@@ -51,10 +52,25 @@ export const Main = styled.main`
   padding: 0 40px;
   width: 100%;
 
-  @media (max-width: 640px) {
+  @media (max-width: 920px) {
     max-width: 100%;
     padding: 0;
   }
 `
 
 export const Right = styled.aside``
+
+export const PageWrapper = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  margin: auto;
+  max-width: 920px;
+  width: 100%;
+
+  @media (max-width: 920px) {
+    display: flex;
+    flex-direction: column;
+  }
+`

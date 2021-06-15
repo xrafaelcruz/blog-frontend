@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
 
   html {
     font-size: 62.5%;
+    background: #494a48;
   }
 
   html, body, #__next {
@@ -31,7 +32,7 @@ export const defaultStyles = css`
     font-family: ${(props) => props.theme.font.primary};
     font-weight: 300;
 
-    @media (max-width: 720px) {
+    @media (max-width: 920px) {
       font-size: 1.8rem;
     }
   }
@@ -42,7 +43,7 @@ export const defaultStyles = css`
     font-family: ${(props) => props.theme.font.primary};
     font-weight: 400;
 
-    @media (max-width: 720px) {
+    @media (max-width: 920px) {
       font-size: 2rem;
     }
   }
@@ -50,7 +51,7 @@ export const defaultStyles = css`
   h1 {
     line-height: 4rem;
 
-    @media (max-width: 720px) {
+    @media (max-width: 920px) {
       line-height: 3.8rem;
     }
   }
@@ -61,7 +62,7 @@ export const defaultStyles = css`
     font-family: ${(props) => props.theme.font.primary};
     font-size: 3.2rem;
 
-    @media (max-width: 720px) {
+    @media (max-width: 920px) {
       font-size: 3rem;
     }
   }

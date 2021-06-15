@@ -6,7 +6,12 @@ export type PropTypes = {
 }
 
 const Button = ({ onClick, active }: PropTypes) => (
-  <S.Button onClick={onClick} active={active} type="button">
+  <S.Button
+    onClick={onClick}
+    active={active}
+    type="button"
+    aria-label="Botão abrir e fechar menu"
+  >
     <S.Line />
     <S.Line />
     <S.Line />

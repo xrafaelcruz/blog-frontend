@@ -48,7 +48,7 @@ export const Nav = styled.nav<NavType>`
       color: ${(props) => props.theme.color.primary};
     }
 
-    @media (max-width: 720px) {
+    @media (max-width: 920px) {
       font-size: 3.8rem;
     }
   }

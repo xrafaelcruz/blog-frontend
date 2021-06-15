@@ -25,8 +25,8 @@ export const Title = styled.h2`
     text-shadow: 0px 0px 0.6rem rgba(0, 0, 0, 0.3);
     transition: all 0.3 ease;
 
-    @media (max-width: 720px) {
-      font-size: 2.6rem;
+    @media (max-width: 920px) {
+      font-size: 1.8rem;
     }
   }
 `
@@ -43,10 +43,10 @@ export const Article = styled.article<ArticleProps>`
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 20px;
   height: 100%;
   justify-content: space-between;
-  padding: 3rem;
+  padding: 20px;
   position: relative;
   overflow: auto;
   transform-style: preserve-3d;
@@ -65,7 +65,8 @@ export const Article = styled.article<ArticleProps>`
     }
   }
 
-  @media (max-width: 720px) {
-    padding: 2rem;
+  @media (max-width: 920px) {
+    padding: 16px;
+    gap: 10px;
   }
 `

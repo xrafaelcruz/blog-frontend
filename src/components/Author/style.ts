@@ -1,19 +1,6 @@
 import styled from 'styled-components'
 import HTML from 'components/HTML'
 
-export const Wrapper = styled.div`
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding-top: 40px;
-
-  @media (max-width: 640px) {
-    display: flex;
-    flex-direction: column;
-    padding-top: 80px;
-  }
-`
-
 export const Title = styled.h1`
   text-align: center;
 `
