@@ -13,8 +13,12 @@ export const Photo = styled.img`
   width: 200px;
 `
 
-export const Description = styled.h3`
-  text-align: center;
+export const Description = styled.h2`
+  && {
+    font-size: 2.2rem;
+    font-weight: 400;
+    text-align: center;
+  }
 `
 
 export const Content = styled(HTML)`
