@@ -18,6 +18,7 @@ export const Photo = styled.img`
 
 export const Description = styled.h2`
   && {
+    color: ${(props) => props.theme.color.white};
     font-size: 2.2rem;
     font-weight: 400;
     text-align: center;

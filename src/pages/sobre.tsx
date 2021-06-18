@@ -10,11 +10,7 @@ export type PropTypes = {
   author: AuthorProps
 }
 
-const About = ({ author }: PropTypes) => (
-  <>
-    <Author {...author} />
-  </>
-)
+const About = ({ author }: PropTypes) => <Author {...author} />
 
 export const getStaticProps: GetStaticProps = async () => {
   const { author } = await client.request(GET_AUTHOR)
