@@ -2,7 +2,10 @@ import styled from 'styled-components'
 import HTML from 'components/HTML'
 
 export const Title = styled.h1`
-  text-align: center;
+  && {
+    color: ${(props) => props.theme.color.primary};
+    text-align: center;
+  }
 `
 
 export const Photo = styled.img`

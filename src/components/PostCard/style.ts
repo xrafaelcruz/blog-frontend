@@ -32,14 +32,14 @@ export const Title = styled.h2`
 `
 
 export const Time = styled.time`
-  color: ${(props) => props.theme.color.white};
+  color: ${(props) => props.theme.color.light};
   transition: all 0.3 ease;
 `
 
 export const Article = styled.article<ArticleProps>`
   background: ${(props) => props.theme.color.secondary};
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2), 0 15px 12px rgba(0, 0, 0, 0.15);
-  border: 2px solid ${(props) => props.theme.color.white};
+  border: 2px solid transparent;
   border-radius: 15px;
   display: flex;
   flex-direction: column;

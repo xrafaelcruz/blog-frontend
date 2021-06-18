@@ -19,7 +19,6 @@ const GlobalStyles = createGlobalStyle`
 
   html {
     font-size: 62.5%;
-    background: #494a48;
   }
 
   html, body, #__next {
@@ -59,22 +58,26 @@ export const defaultStyles = css`
     }
   }
 
-  h1 {
-    line-height: 4rem;
-
-    @media (max-width: 920px) {
-      line-height: 3.8rem;
-    }
-  }
-
   h1,
   h2 {
-    color: ${(props) => props.theme.color.white};
     font-family: ${(props) => props.theme.font.primary};
     font-size: 3.2rem;
 
     @media (max-width: 920px) {
       font-size: 3rem;
+    }
+  }
+
+  h2 {
+    color: ${(props) => props.theme.color.light};
+  }
+
+  h1 {
+    color: ${(props) => props.theme.color.primary};
+    line-height: 4rem;
+
+    @media (max-width: 920px) {
+      line-height: 3.8rem;
     }
   }
 

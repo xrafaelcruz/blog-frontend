@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 import { PropTypes } from '.'
 
 export const Line = styled.span`
-  background: ${(props) => props.theme.color.white};
+  background: ${(props) => props.theme.color.light};
   border-radius: 5px;
   display: block;
   height: 2px;
