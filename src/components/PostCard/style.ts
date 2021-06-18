@@ -66,6 +66,7 @@ export const Article = styled.article<ArticleProps>`
   }
 
   @media (max-width: 920px) {
+    box-shadow: none;
     padding: 16px;
     gap: 10px;
   }

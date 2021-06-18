@@ -37,7 +37,7 @@ export const Header = styled.header`
 
   @media (max-width: 920px) {
     background: ${(props) => props.theme.color.dark};
-    box-shadow: ${(props) => `1px 1px 5px ${props.theme.color.secondary}`};
+    border-bottom: 1px solid rgb(50 51 49 / 50%);
     left: 0;
     padding: 5px 15px;
     position: fixed;
