@@ -8,12 +8,16 @@ export const Title = styled.h1`
   }
 `
 
-export const Photo = styled.img`
+export const WrapperPhoto = styled.div`
   border-radius: 50%;
+  margin: 20px auto;
   height: 200px;
-  margin: 2rem auto;
-  object-fit: cover;
+  overflow: hidden;
   width: 200px;
+`
+
+export const Photo = styled.img`
+  object-fit: cover;
 `
 
 export const Description = styled.h2`
