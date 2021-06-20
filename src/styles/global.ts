@@ -19,6 +19,7 @@ const GlobalStyles = createGlobalStyle`
 
   html {
     font-size: 62.5%;
+    background: #20232a;
   }
 
   html, body, #__next {
@@ -35,6 +36,15 @@ const GlobalStyles = createGlobalStyle`
 `
 
 export const defaultStyles = css`
+  h1 {
+    font-size: 3.2rem;
+    color: ${(props) => props.theme.color.primary};
+
+    @media (max-width: 920px) {
+      font-size: 3rem;
+    }
+  }
+
   p {
     color: ${(props) => props.theme?.color.gray};
     font-size: 2rem;
@@ -47,42 +57,7 @@ export const defaultStyles = css`
     }
   }
 
-  h3 {
-    color: ${(props) => props.theme?.color.gray};
-    font-size: 2.2rem;
-    font-family: ${(props) => props.theme.font.primary};
-    font-weight: 400;
-
-    @media (max-width: 920px) {
-      font-size: 2rem;
-    }
-  }
-
-  h1,
-  h2 {
-    font-family: ${(props) => props.theme.font.primary};
-    font-size: 3.2rem;
-
-    @media (max-width: 920px) {
-      font-size: 3rem;
-    }
-  }
-
-  h2 {
-    color: ${(props) => props.theme.color.light};
-  }
-
-  h1 {
-    color: ${(props) => props.theme.color.primary};
-    line-height: 4rem;
-
-    @media (max-width: 920px) {
-      line-height: 3.8rem;
-    }
-  }
-
   time {
-    font-family: ${(props) => props.theme.font.primary};
     font-size: 1.6rem;
     font-weight: 400;
   }

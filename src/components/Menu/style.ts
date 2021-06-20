@@ -39,7 +39,7 @@ export const Nav = styled.nav<NavType>`
   ${(props) => props.active === 'true' && navActive}
 
   a {
-    color: ${(props) => props.theme.color.light};
+    color: ${(props) => props.theme.color.lightGray};
     font-size: 4rem;
     text-transform: uppercase;
     transition: all 0.3s ease;

@@ -3,9 +3,6 @@ import { defaultStyles } from 'styles/global'
 
 export const Layout = styled.div`
   align-items: center;
-  background: ${(props) => props.theme.color.dark};
-  background-position: center center;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -22,8 +19,6 @@ export const Layout = styled.div`
   }
 
   @media (max-width: 920px) {
-    display: flex;
-    flex-direction: column;
     padding: 58px 0 40px;
   }
 
@@ -68,9 +63,4 @@ export const PageWrapper = styled.div`
   margin: auto;
   max-width: 920px;
   width: 100%;
-
-  @media (max-width: 920px) {
-    display: flex;
-    flex-direction: column;
-  }
 `

@@ -1,23 +1,14 @@
 import styled from 'styled-components'
 import HTML from 'components/HTML'
 
-export const Title = styled.h1`
-  && {
-    color: ${(props) => props.theme.color.primary};
-    text-align: center;
-  }
-`
-
-export const WrapperPhoto = styled.div`
-  border-radius: 50%;
-  margin: 20px auto;
-  height: 200px;
-  overflow: hidden;
-  width: 200px;
-`
+export const Title = styled.h1``
 
 export const Photo = styled.img`
+  border-radius: 50%;
+  height: 200px;
+  margin: 20px auto;
   object-fit: cover;
+  width: 200px;
 `
 
 export const Description = styled.h2`

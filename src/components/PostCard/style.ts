@@ -15,6 +15,7 @@ export const Title = styled.h2`
   && {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    color: ${(props) => props.theme.color.lightGray};
     display: -webkit-box;
     font-size: 2rem;
     overflow: hidden;
@@ -23,7 +24,6 @@ export const Title = styled.h2`
     text-align: center;
     text-overflow: ellipsis;
     text-shadow: 0px 0px 0.6rem rgba(0, 0, 0, 0.3);
-    transition: all 0.3 ease;
 
     @media (max-width: 920px) {
       font-size: 1.8rem;
@@ -32,8 +32,7 @@ export const Title = styled.h2`
 `
 
 export const Time = styled.time`
-  color: ${(props) => props.theme.color.light};
-  transition: all 0.3 ease;
+  color: ${(props) => props.theme.color.lightGray};
 `
 
 export const Article = styled.article<ArticleProps>`
