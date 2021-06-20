@@ -1,11 +1,11 @@
 import * as S from './style'
 
-export type PropTypes = {
+export type Props = {
   onClick: () => void
   active: string
 }
 
-const Button = ({ onClick, active }: PropTypes) => (
+const Button = ({ onClick, active }: Props) => (
   <S.Button
     onClick={onClick}
     active={active}

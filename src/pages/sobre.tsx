@@ -6,11 +6,11 @@ import { AuthorProps } from 'types/api'
 
 import Author from 'components/Author'
 
-export type PropTypes = {
+export type Props = {
   author: AuthorProps
 }
 
-const About = ({ author }: PropTypes) => <Author {...author} />
+const About = ({ author }: Props) => <Author {...author} />
 
 export const getStaticProps: GetStaticProps = async () => {
   const { author } = await client.request(GET_AUTHOR)

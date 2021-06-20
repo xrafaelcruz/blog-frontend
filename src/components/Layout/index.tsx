@@ -1,11 +1,11 @@
 import Menu from 'components/Menu'
 import * as S from './style'
 
-export type PropTypes = {
+export type Props = {
   children: React.ReactNode
 }
 
-const Layout = ({ children }: PropTypes) => (
+const Layout = ({ children }: Props) => (
   <S.Layout>
     <S.Header>
       <Menu />

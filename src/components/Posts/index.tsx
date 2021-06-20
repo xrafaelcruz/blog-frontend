@@ -5,11 +5,11 @@ import PostCard from 'components/PostCard'
 import * as S from './style'
 import { useHandleScroll } from './hooks'
 
-export type PropTypes = {
+export type Props = {
   posts: PostProps[]
 }
 
-const Posts = ({ posts }: PropTypes) => {
+const Posts = ({ posts }: Props) => {
   const { allPosts, handleScrollParams, handleScroll } = useHandleScroll(posts)
 
   return (

@@ -35,9 +35,9 @@ const mouseLeave = (ref: any) => {
   box.style.transform = 'none'
 }
 
-export type PropTypes = Omit<PostProps, 'content'>
+export type Props = Omit<PostProps, 'content'>
 
-const Card = ({ id, title, createdAt }: PropTypes) => {
+const Card = ({ id, title, createdAt }: Props) => {
   const ref = useRef()
 
   return (

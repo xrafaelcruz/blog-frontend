@@ -7,11 +7,11 @@ import { PostProps } from 'types/api'
 import BlinkText from 'components/BlinkText'
 import Posts from 'components/Posts'
 
-export type PropTypes = {
+export type Props = {
   posts: PostProps[]
 }
 
-const Home = ({ posts }: PropTypes) => (
+const Home = ({ posts }: Props) => (
   <>
     <BlinkText>Bem vindo ao meu blog front-end!</BlinkText>
     <Posts posts={posts} />

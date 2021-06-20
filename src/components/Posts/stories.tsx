@@ -1,6 +1,6 @@
 import React from 'react'
 import { Story, Meta } from '@storybook/react'
-import Posts, { PropTypes } from '.'
+import Posts, { Props } from '.'
 
 export default {
   title: 'Posts',
@@ -21,4 +21,4 @@ export default {
   }
 } as Meta
 
-export const Default: Story<PropTypes> = (args) => <Posts {...args} />
+export const Default: Story<Props> = (args) => <Posts {...args} />

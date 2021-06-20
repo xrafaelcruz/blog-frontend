@@ -1,6 +1,6 @@
 import React from 'react'
 import { Story, Meta } from '@storybook/react'
-import PostCard, { PropTypes } from '.'
+import PostCard, { Props } from '.'
 
 export default {
   title: 'PostCard',
@@ -19,7 +19,7 @@ export default {
   }
 } as Meta
 
-export const Default: Story<PropTypes> = (args) => (
+export const Default: Story<Props> = (args) => (
   <div style={{ width: '400px' }}>
     <PostCard {...args} />
   </div>
