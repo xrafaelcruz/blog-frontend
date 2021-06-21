@@ -36,10 +36,8 @@ export const Nav = styled.nav<NavProps>`
   width: 100vw;
   z-index: 1;
 
-  ${(props) => props.active === 'true' && navActive}
-
   a {
-    color: ${(props) => props.theme.color.light};
+    color: ${(props) => props.theme.color.lightGray};
     font-size: 4rem;
     text-transform: uppercase;
     transition: all 0.3s ease;
@@ -52,4 +50,6 @@ export const Nav = styled.nav<NavProps>`
       font-size: 3.8rem;
     }
   }
+
+  ${(props) => props.active === 'true' && navActive}
 `

@@ -1,5 +1,8 @@
 import styled, { css } from 'styled-components'
-import { PropTypes } from '.'
+
+export type Props = {
+  active: string
+}
 
 export const Line = styled.span`
   background: ${(props) => props.theme.color.lightGray};
@@ -16,7 +19,7 @@ export const Line = styled.span`
   }
 `
 
-export const Button = styled.button<PropTypes>`
+export const Button = styled.button<Props>`
   background: transparent;
   border: 0;
   cursor: pointer;
