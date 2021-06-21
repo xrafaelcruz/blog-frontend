@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint src",
     "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook -s ./public"
+    "build-storybook": "build-storybook -s ./public",
+    "test": "jest"
   },
   "dependencies": {
     "date-fns": "^2.21.1",
@@ -28,6 +29,7 @@
     "@storybook/addon-links": "^6.2.9",
     "@storybook/react": "^6.2.9",
     "@types/date-fns": "^2.6.0",
+    "@types/jest": "^26.0.23",
     "@types/react": "^17.0.3",
     "@types/react-infinite-scroll-component": "^4.2.5",
     "@types/styled-components": "^5.1.9",
@@ -41,6 +43,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "jest": "^27.0.4",
     "prettier": "2.2.1",
     "typescript": "^4.3.4"
   }
