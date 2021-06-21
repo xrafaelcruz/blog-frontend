@@ -2,13 +2,13 @@ import * as S from './style'
 
 export type Props = {
   onClick: () => void
-  active: string
+  active: boolean
 }
 
 const Button = ({ onClick, active }: Props) => (
   <S.Button
     onClick={onClick}
-    active={active}
+    active={`${active}`}
     type="button"
     aria-label="Botão abrir e fechar menu"
   >

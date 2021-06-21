@@ -7,7 +7,7 @@ export default {
   component: Button,
   args: {
     onClick: () => null,
-    active: 'false'
+    active: false
   },
   argTypes: {
     active: {

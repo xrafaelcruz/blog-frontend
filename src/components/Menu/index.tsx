@@ -22,7 +22,7 @@ const Menu = () => {
 
   return (
     <S.Wrapper>
-      <Button onClick={toggle} active={`${active}`} />
+      <Button onClick={toggle} active={active} />
 
       <S.Nav active={`${active}`}>
         {items.map((item, i) => (
