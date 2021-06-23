@@ -6,7 +6,7 @@ export type Props = {
 }
 
 const Layout = ({ children }: Props) => (
-  <S.Layout>
+  <S.Layout data-testid="layout">
     <S.Header>
       <Menu />
     </S.Header>
