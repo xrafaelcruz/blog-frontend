@@ -36,20 +36,19 @@ export const Nav = styled.nav<NavProps>`
   width: 100vw;
   z-index: 1;
 
-  a {
-    color: ${(props) => props.theme.color.lightGray};
-    font-size: 4rem;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
+  ${(props) => props.active === 'true' && navActive}
+`
+export const Link = styled.a`
+  color: ${(props) => props.theme.color.lightGray};
+  font-size: 4rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
 
-    &:hover {
-      color: ${(props) => props.theme.color.primary};
-    }
-
-    @media (max-width: 920px) {
-      font-size: 3.8rem;
-    }
+  &:hover {
+    color: ${(props) => props.theme.color.primary};
   }
 
-  ${(props) => props.active === 'true' && navActive}
+  @media (max-width: 920px) {
+    font-size: 3.8rem;
+  }
 `
