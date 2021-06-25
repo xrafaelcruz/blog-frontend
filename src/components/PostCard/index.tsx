@@ -49,7 +49,7 @@ const Card = ({ id, title, createdAt }: Props) => {
           onMouseMove={(e: any) => mouseMove(e, ref)}
         >
           <S.Wrapper>
-            <S.Title>{title}</S.Title>
+            <S.Title data-testid="post-title">{title}</S.Title>
           </S.Wrapper>
 
           <S.Time>{formatDate(createdAt)}</S.Time>

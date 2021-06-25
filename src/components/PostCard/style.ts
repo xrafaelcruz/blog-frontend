@@ -12,22 +12,20 @@ export const Wrapper = styled.div`
 `
 
 export const Title = styled.h2`
-  && {
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    color: ${(props) => props.theme.color.lightGray};
-    display: -webkit-box;
-    font-size: 2rem;
-    overflow: hidden;
-    margin: 0;
-    padding: 0.3rem;
-    text-align: center;
-    text-overflow: ellipsis;
-    text-shadow: 0px 0px 0.6rem rgba(0, 0, 0, 0.3);
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  color: ${(props) => props.theme.color.lightGray};
+  display: -webkit-box;
+  font-size: 2rem;
+  overflow: hidden;
+  margin: 0;
+  padding: 0.3rem;
+  text-align: center;
+  text-overflow: ellipsis;
+  text-shadow: 0px 0px 0.6rem rgba(0, 0, 0, 0.3);
 
-    @media (max-width: 920px) {
-      font-size: 1.8rem;
-    }
+  @media (max-width: 920px) {
+    font-size: 1.8rem;
   }
 `
 
