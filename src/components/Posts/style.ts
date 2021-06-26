@@ -1,8 +1,7 @@
 import styled from 'styled-components'
-import InfiniteScroll from 'react-infinite-scroll-component'
 
 // eslint-disable-next-line
-export const List = styled(InfiniteScroll as any)`
+export const List = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   list-style: none;

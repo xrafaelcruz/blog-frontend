@@ -19,4 +19,14 @@ describe('<PostCard />', () => {
 
     expect(title).toHaveStyleRule('font-size', '1.8rem', { media })
   })
+
+  it('should apply styles to the post article on mobile', () => {
+    renderWithTheme(Component)
+
+    const article = screen.getByRole('article')
+
+    expect(article).toHaveStyleRule('box-shadow', 'none', { media })
+    expect(article).toHaveStyleRule('padding', '16px', { media })
+    expect(article).toHaveStyleRule('gap', '10px', { media })
+  })
 })

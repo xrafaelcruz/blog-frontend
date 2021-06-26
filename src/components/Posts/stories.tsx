@@ -8,11 +8,13 @@ export default {
   args: {
     posts: [
       {
+        id: '0',
         title: 'post1',
         content: '<p>post1 conteudo</p>',
         createdAt: '2021-05-01T18:58:27.880Z'
       },
       {
+        id: '1',
         title: 'post2',
         content: '<p>post2 conteudo</p>',
         createdAt: '2021-05-01T18:58:27.880Z'

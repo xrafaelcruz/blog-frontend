@@ -1,3 +1,5 @@
+import InfiniteScroll from 'react-infinite-scroll-component'
+
 import { PostProps } from 'types/api'
 
 import PostCard from 'components/PostCard'
@@ -13,18 +15,20 @@ const Posts = ({ posts }: Props) => {
   const { allPosts, handleScrollParams, handleScroll } = useHandleScroll(posts)
 
   return (
-    <S.List
+    <InfiniteScroll
       dataLength={allPosts.length}
       next={() => handleScroll(handleScrollParams)}
       hasMore={handleScrollParams.hasMore}
       loader={<S.Message>Loading...</S.Message>}
     >
-      {allPosts?.map((post) => (
-        <S.Item key={post.id}>
-          <PostCard {...post} />
-        </S.Item>
-      ))}
-    </S.List>
+      <S.List data-testid="post-list">
+        {allPosts?.map((post) => (
+          <S.Item key={post.id}>
+            <PostCard {...post} />
+          </S.Item>
+        ))}
+      </S.List>
+    </InfiniteScroll>
   )
 }
 
