@@ -8,7 +8,7 @@ import { formatDate } from 'utils/date'
 import * as S from './style'
 
 const mouseMove = (e: any, ref: any) => {
-  if (window.innerWidth <= 920) {
+  if (window.innerWidth <= 1070) {
     return null
   }
 
@@ -26,7 +26,7 @@ const mouseMove = (e: any, ref: any) => {
 }
 
 const mouseLeave = (ref: any) => {
-  if (window.innerWidth <= 920) {
+  if (window.innerWidth <= 1070) {
     return null
   }
 

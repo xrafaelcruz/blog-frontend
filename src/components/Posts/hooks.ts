@@ -2,7 +2,7 @@ import { useState, Dispatch, SetStateAction } from 'react'
 import { PostProps } from 'types/api'
 
 import client from 'graphql/client'
-import GET_POSTS from 'graphql/queries/getPosts'
+import GET_POSTS, { limit } from 'graphql/queries/getPosts'
 
 type RequestVariables = {
   start: number
@@ -30,8 +30,11 @@ const handleScroll = async (params: HandleScrollParams) => {
 
   const newPosts = await fetchMorePosts(params.variables)
 
-  if (!newPosts.length) {
+  if (newPosts.length < limit) {
     params.setHasMore(false)
+  }
+
+  if (!newPosts.length) {
     return null
   }
 
@@ -41,8 +44,8 @@ const handleScroll = async (params: HandleScrollParams) => {
 
 export const useHandleScroll = (posts: PostProps[]) => {
   const [allPosts, setAllPosts] = useState(posts)
-  const [variables, setVariables] = useState({ start: 20, limit: 20 })
-  const [hasMore, setHasMore] = useState(true)
+  const [variables, setVariables] = useState({ start: limit, limit })
+  const [hasMore, setHasMore] = useState(posts.length < limit ? false : true)
 
   const handleScrollParams = {
     hasMore,

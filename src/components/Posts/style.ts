@@ -4,6 +4,7 @@ import Infinite from 'react-infinite-scroll-component'
 // eslint-disable-next-line
 export const InfiniteScroll = styled(Infinite as any)`
   position: relative;
+  min-height: 100vh;
 `
 
 export const List = styled.div`
@@ -12,6 +13,8 @@ export const List = styled.div`
   list-style: none;
   padding-bottom: 80px;
   position: relative;
+  margin: auto;
+  max-width: 2300px;
 
   @media (max-width: 920px) {
     grid-template-columns: 1fr;
@@ -22,6 +25,10 @@ export const List = styled.div`
 export const Item = styled.div`
   height: 25rem;
   padding: 20px;
+
+  &:last-child {
+    margin-bottom: 25rem;
+  }
 
   @media (max-width: 920px) {
     height: 17rem;
