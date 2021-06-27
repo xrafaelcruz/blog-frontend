@@ -1,6 +1,11 @@
 import styled from 'styled-components'
+import Infinite from 'react-infinite-scroll-component'
 
 // eslint-disable-next-line
+export const InfiniteScroll = styled(Infinite as any)`
+  position: relative;
+`
+
 export const List = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));

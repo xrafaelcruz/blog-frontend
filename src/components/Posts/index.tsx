@@ -1,5 +1,3 @@
-import InfiniteScroll from 'react-infinite-scroll-component'
-
 import { PostProps } from 'types/api'
 
 import PostCard from 'components/PostCard'
@@ -15,7 +13,7 @@ const Posts = ({ posts }: Props) => {
   const { allPosts, handleScrollParams, handleScroll } = useHandleScroll(posts)
 
   return (
-    <InfiniteScroll
+    <S.InfiniteScroll
       dataLength={allPosts.length}
       next={() => handleScroll(handleScrollParams)}
       hasMore={handleScrollParams.hasMore}
@@ -28,7 +26,7 @@ const Posts = ({ posts }: Props) => {
           </S.Item>
         ))}
       </S.List>
-    </InfiniteScroll>
+    </S.InfiniteScroll>
   )
 }
 
