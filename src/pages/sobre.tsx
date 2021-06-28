@@ -1,4 +1,5 @@
 import { GetStaticProps } from 'next'
+import Head from 'next/head'
 
 import client from 'graphql/client'
 import GET_AUTHOR from 'graphql/queries/getAuthor'
@@ -10,7 +11,15 @@ export type Props = {
   author: AuthorProps
 }
 
-const About = ({ author }: Props) => <Author {...author} />
+const About = ({ author }: Props) => (
+  <>
+    <Head>
+      <title>Sobre | Rafael Cruz | Front-end Developer</title>
+    </Head>
+
+    <Author {...author} />
+  </>
+)
 
 export const getStaticProps: GetStaticProps = async () => {
   const { author } = await client.request(GET_AUTHOR)

@@ -1,4 +1,5 @@
 import { GetStaticProps } from 'next'
+import Head from 'next/head'
 
 import client from 'graphql/client'
 import GET_POST from 'graphql/queries/getPost'
@@ -15,7 +16,15 @@ type PathProps = {
   params: { id: string }
 }
 
-const PostPage = ({ post }: Props) => <>{post && <PostDetail {...post} />}</>
+const PostPage = ({ post }: Props) => (
+  <>
+    <Head>
+      <title>{post.title} | Rafael Cruz</title>
+    </Head>
+
+    {post && <PostDetail {...post} />}
+  </>
+)
 
 export async function getStaticPaths() {
   const { posts } = await client.request(GET_POSTS, { limit: 20 })

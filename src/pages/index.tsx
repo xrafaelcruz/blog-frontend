@@ -1,4 +1,5 @@
 import { GetStaticProps } from 'next'
+import Head from 'next/head'
 
 import client from 'graphql/client'
 import GET_POSTS from 'graphql/queries/getPosts'
@@ -13,6 +14,10 @@ export type Props = {
 
 const Home = ({ posts }: Props) => (
   <>
+    <Head>
+      <title>Blog | Rafael Cruz | Front-end Developer</title>
+    </Head>
+
     <BlinkText>Bem vindo ao meu blog front-end!</BlinkText>
     <Posts posts={posts} />
   </>
