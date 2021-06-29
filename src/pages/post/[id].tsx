@@ -19,7 +19,7 @@ type PathProps = {
 const PostPage = ({ post }: Props) => (
   <>
     <Head>
-      <title>{post.title} | Rafael Cruz</title>
+      <title>{post?.title} | Rafael Cruz</title>
     </Head>
 
     {post && <PostDetail {...post} />}
