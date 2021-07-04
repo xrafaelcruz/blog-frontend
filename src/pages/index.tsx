@@ -7,6 +7,7 @@ import { PostProps } from 'types/api'
 
 import BlinkText from 'components/BlinkText'
 import Posts from 'components/Posts'
+import ButtonNewPost from 'components/ButtonNewPost'
 
 export type Props = {
   posts: PostProps[]
@@ -19,6 +20,9 @@ const Home = ({ posts }: Props) => (
     </Head>
 
     <BlinkText>Bem vindo ao meu blog front-end!</BlinkText>
+
+    <ButtonNewPost />
+
     <Posts posts={posts} />
   </>
 )
