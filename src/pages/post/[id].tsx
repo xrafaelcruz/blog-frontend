@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 import client from 'graphql/client'
 import GET_POST from 'graphql/queries/getPost'
-import GET_POSTS from 'graphql/queries/getPosts'
+import GET_POSTS, { limit } from 'graphql/queries/getPosts'
 import { PostProps } from 'types/api'
 
 import PostDetail from 'components/PostDetail'
@@ -27,7 +27,7 @@ const PostPage = ({ post }: Props) => (
 )
 
 export async function getStaticPaths() {
-  const { posts } = await client.request(GET_POSTS, { limit: 20 })
+  const { posts } = await client.request(GET_POSTS, { limit })
   const paths: PathProps[] = []
 
   posts.forEach(({ id }: PostProps) => {

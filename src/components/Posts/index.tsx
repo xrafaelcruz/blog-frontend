@@ -17,7 +17,7 @@ const Posts = ({ posts }: Props) => {
       dataLength={allPosts.length}
       next={() => handleScroll(handleScrollParams)}
       hasMore={handleScrollParams.hasMore}
-      loader={<S.Message>Loading...</S.Message>}
+      loader={<S.Message>Carregando...</S.Message>}
     >
       <S.List data-testid="post-list">
         {allPosts?.map((post) => (
