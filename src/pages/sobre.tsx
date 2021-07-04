@@ -17,7 +17,7 @@ const About = ({ author }: Props) => (
       <title>Sobre | Rafael Cruz | Front-end Developer</title>
     </Head>
 
-    <Author {...author} />
+    {author && <Author {...author} />}
   </>
 )
 
