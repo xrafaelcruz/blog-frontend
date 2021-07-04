@@ -31,7 +31,7 @@ export const Header = styled.header`
   z-index: 20;
 
   @media (max-width: 920px) {
-    background: ${(props) => props.theme.color.dark};
+    background: ${(props) => props.theme.color.secondary};
     border-bottom: 1px solid rgb(50 51 49 / 50%);
     left: 0;
     padding: 5px 15px;
@@ -61,6 +61,6 @@ export const PageWrapper = styled.div`
   flex-direction: column;
   padding: 40px 20px;
   margin: auto;
-  max-width: 920px;
+  max-width: 1000px;
   width: 100%;
 `

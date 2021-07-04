@@ -28,7 +28,7 @@ const typing = keyframes`
   }
 
   to {
-    width: 55rem;
+    width: 58rem;
   }
 `
 
