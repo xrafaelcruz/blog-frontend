@@ -1,13 +1,15 @@
 import { PostProps } from 'types/api'
 import { formatDate } from 'utils/date'
 
+import TextContent from 'components/TextContent'
+
 import * as S from './style'
 
 const PostDetail = ({ title, createdAt, content }: PostProps) => (
   <S.Wrapper>
     <S.Title>{title}</S.Title>
     <S.Time>{formatDate(createdAt)}</S.Time>
-    <S.Content html={content} />
+    <TextContent html={content} />
   </S.Wrapper>
 )
 
