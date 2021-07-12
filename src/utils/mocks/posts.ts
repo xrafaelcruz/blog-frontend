@@ -9,7 +9,7 @@ export const generatePosts = async (numberOfPosts = 1) => {
       input: {
         data: {
           title: faker.lorem.sentence(),
-          content: faker.lorem.paragraphs()
+          content: `<p>${faker.lorem.paragraphs()}</p>`
         }
       }
     })
