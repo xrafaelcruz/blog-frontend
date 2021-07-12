@@ -30,7 +30,7 @@ export const Title = styled.h2`
 `
 
 export const Time = styled.time`
-  color: ${(props) => props.theme.color.lightGray};
+  color: ${(props) => props.theme.color.gray};
 `
 
 export const Article = styled.article<ArticleProps>`

@@ -38,7 +38,7 @@ export const Item = styled.div`
 
 export const Message = styled.p`
   bottom: 0;
-  color: ${(props) => props.theme.color.secondary};
+  color: ${(props) => props.theme.color.lightGray};
   font-family: ${(props) => props.theme.font.primary};
   font-size: 2rem;
   position: absolute;

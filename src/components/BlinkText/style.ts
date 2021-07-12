@@ -40,6 +40,7 @@ export const Text = styled.h1`
     border-right: 2px solid rgba(255, 255, 255, 0.75);
     display: inline-block;
     font-family: ${(props) => props.theme.font.blink};
+    font-size: 3.4rem;
     justify-content: center;
     margin: 1rem auto;
     overflow: hidden;
